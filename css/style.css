@@ -1,0 +1,131 @@
+.main-color{
+    background-color: #24353f;
+}
+*{
+    font-family: 'Titillium Web', sans-serif;
+}
+input::placeholder{
+    font-size:.9rem;
+    font-weight:300;
+    color:rgba(255, 255, 255, 0.662) !important;
+}
+h1{
+    color: #17a2b8  !important
+}
+.group{
+    box-shadow: 5px 9px 40px #000 !important;
+    width: 80%;
+}
+.form-control{
+    
+    margin-bottom: 20px;
+    border:2px solid #fff;
+    box-shadow: none;
+    color: #fff !important;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+input[type="password"] {
+    font-family: Arial;
+    -webkit-text-security: circle;
+    -moz-text-security: circle;
+  }
+  /* ******************************* */
+  .sign{
+    position: relative;
+  }
+  .sign::after{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #fff;
+    height: 1.5px;
+    transition: 0.3s;
+  }
+  .sign:hover::after{
+    width: 100%;
+  }
+/* **************************************** */
+  .submit:hover{
+    color: #fff !important;
+  }
+    
+  .logout{
+    border: 2px solid #ffc107 !important;
+  }
+ .logout:hover{
+    color: #000 !important;
+ }
+
+
+ /* ******************************************************************* */
+ #checkbox2 {
+    display: none;
+  }
+  
+  .toggle2 {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition-duration: .5s;
+    border: none;
+  }
+  
+  .bars {
+    width: 100%;
+    height: 6px;
+    background-color: rgb(92, 176, 255);
+    border-radius: 6px;
+  }
+  
+  #bar5 {
+    transition-duration: .8s;
+  }
+  
+  #bar4,#bar6 {
+    width: 80%;
+  }
+  
+  #checkbox2:checked + .toggle2 .bars {
+    position: absolute;
+    transition-duration: .5s;
+  }
+  
+  #checkbox2:checked + .toggle2 #bar5 {
+    transform: scaleX(0);
+    transition-duration: .5s;
+  }
+  
+  #checkbox2:checked + .toggle2 #bar4 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox2:checked + .toggle2 #bar6 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+  }
+  
+  #checkbox2:checked + .toggle2 {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+  }
+  
+
+  @media screen and (max-width:992px) {
+    .nav-link{
+        margin-top: 15px;
+    }
+    
+  }
+
